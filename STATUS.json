@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "documented_on": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "latest_verified_server_report": "2026-10-18T07:47:17+08:00",
+  "gpu_snapshot_time": "2026-10-18T06:13:14+08:00",
+  "later_server_state": "unknown_not_queried_for_this_documentation_upload",
+  "evidence_type": "sanitized_summary_of_local_audit_and_timestamped_server_receipts",
+  "environment": {
+    "server_os": "Ubuntu",
+    "server_gpu": "RTX 5090",
+    "server_gpu_memory_mib": 32607,
+    "gpu_is_shared": true,
+    "python": "3.11.17",
+    "pytorch": "2.10.0+cu130",
+    "transformers": "4.44.2",
+    "accelerate": "0.34.2",
+    "original_project_unit_tests_passed": 8
+  },
+  "downloads": {
+    "navila": {"complete_verified": true, "selected_files": 16, "approx_gb": 16.998},
+    "mobilevla_cot": {"complete_verified_selected_files": true, "selected_files": 282, "approx_mb": 755},
+    "quard": {"complete_verified": true, "archives": 17, "files_including_readme": 18, "bytes": 124804417910}
+  },
+  "verified_forward_only": {
+    "rgb_text_real": {"passed": true, "peak_allocated_gib": 16.117},
+    "multimodal_cached_synthetic": {"passed": true, "peak_allocated_gib": 15.664},
+    "training_peak_memory_measured": false,
+    "task_quality_evaluated": false
+  },
+  "rgb_two_update_validation": {
+    "stage": "long_sft",
+    "records": 1,
+    "frames": 2,
+    "planned_updates": 2,
+    "native_data_validation_passed": true,
+    "original_split_verified": false,
+    "decoder_trainable": false,
+    "training_triggered_at_latest_report": false,
+    "final_success_result_available": false,
+    "successful_checkpoint_available": false,
+    "planned_checkpoint_readback_scope": "strict_loader_same_instance_parameter_equality",
+    "fresh_process_reload_forward_validated": false
+  },
+  "cpu_step_candidate_audit": {
+    "processed": 1529,
+    "errors": 0,
+    "conditional_rgb392_fits_2048": 1268,
+    "conditional_rgb392_exceeds_2048": 261,
+    "actual_multimodal_lengths_verified": 0,
+    "current_long_sft_eligible": 0,
+    "official_training_ready": 0
+  },
+  "monitor_at_latest_report": {
+    "identity_verified": true,
+    "regular_poll_seconds": 7200,
+    "state": "waiting_target_exit",
+    "launch_consumed": false,
+    "launch_marker_present": false,
+    "runner_execution_marker_present": false,
+    "result_present": false,
+    "detachment_verified_at_deployment": true,
+    "configured_deadline_beijing": "2026-10-18T12:13:13+08:00",
+    "unlimited_wait_or_automatic_extension": false
+  },
+  "not_completed": [
+    "successful_two_update_training",
+    "formal_long_sft",
+    "action_sft",
+    "grpo",
+    "real_multimodal_training",
+    "closed_loop_robot_or_simulator_evaluation",
+    "paper_benchmark_reproduction",
+    "domain_randomization_comparison"
+  ]
+}
